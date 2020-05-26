@@ -1,4 +1,3 @@
-
 x = '''
 
 seven
@@ -20,7 +19,6 @@ print(z.replace('e', '8'))
 m = 42
 n = 24
 print('the value of m: {mm} and n: {nn}'.format(mm=m, nn=n))
-
 
 # Changes the entire case of string
 # Since strings are immutable in python, these all create new objects rather than modifying the original string

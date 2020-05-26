@@ -1,4 +1,3 @@
-
 def is_prime(n):
     if (n <= 1):
         return False
@@ -28,4 +27,3 @@ def is_even(n):
 #
 # for i in numbers:
 #     print('Is the number {} even? {}'.format(i, is_even(i)))
-
