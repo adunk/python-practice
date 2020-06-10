@@ -3,6 +3,8 @@ def main():
     x = 5
     kitten(x)
     print(f'in main: x is {x}')
+    # The * here is a little trick to convert the list into individual function arguments
+    print(addition(*[1, 3, 4, 5]))
 
 
 def kitten(a):
@@ -28,6 +30,10 @@ def dog():
     x = ('grr', 'woof', 'pant')
     # Notice the list argument indicator
     bark(*x)
+
+
+def addition(*args):
+    return sum(args)
 
 
 # * variable length argument list indicator. Treats the argument as a tuple.
@@ -90,7 +96,8 @@ def inclusive_range(*args):
 # the '__main__' is a special value that means this was not imported and this is the 'main' file.
 # This is also important as it allows functions in the script to call other functions that have been defined after it.
 # Otherwise they won't work.
-if __name__ == '__main__': main()
+if __name__ == '__main__':
+    main()
 if __name__ == '__main__': mutable()
 if __name__ == '__main__': dog()
 if __name__ == '__main__': a_list()

@@ -40,6 +40,12 @@ m = 47
 # Returns a tuple with two values. Divisible and remainder (15, 2)
 n = divmod(m, 3)
 
-
 print(f'x is {x}')
 print(f'y is {y}')
+
+# These are valid numbers using _ and makes reading large numbers a little easier
+num1 = 10_000_000_000
+num2 = 100_000_000
+print(num1 + num2)
+# How to format numbers with ,
+print(f'{num1:,}')

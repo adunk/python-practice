@@ -1,0 +1,6 @@
+User:Andrew Dunkle 06/06/2020 12:17:41 AM: DEBUG: main Line:10 This is a debug message
+User:Andrew Dunkle 06/06/2020 12:17:41 AM: INFO: main Line:20 This is an info message
+User:Andrew Dunkle 06/06/2020 12:17:41 AM: WARNING: main Line:30 This is a warning message
+User:Andrew Dunkle 06/06/2020 12:17:41 AM: ERROR: main Line:40 This is an error message
+User:Andrew Dunkle 06/06/2020 12:17:41 AM: CRITICAL: main Line:50 This is a critical message
+User:Andrew Dunkle 06/06/2020 12:17:41 AM: DEBUG: anotherFunction Line:10 This is a debug-level message.

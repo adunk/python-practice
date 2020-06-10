@@ -35,3 +35,20 @@ colors = ['red', 'blue', 'green', 'yellow', 'orange']
 # Combinations: Similar to permutations but order does not matter - no copies with the same inputs
 for c in itertools.combinations(colors, 2):
     print(c)
+
+# Use chain() to connect sequences together
+x = itertools.chain('ABCD', '1234')
+print(list(x))
+
+
+def test_function(x: int):
+    return x < 40
+
+
+vals = [10, 20, 30, 40, 50, 40, 30]
+
+# dropwhile() and takewhile() will return values until a certain condition is met that stops them
+# dropwhle() will ignore values until the condition is met, and then start filling in.
+# takewhile() will take until condition is met, then stops
+print(list(itertools.dropwhile(test_function, vals)))
+print(list(itertools.takewhile(test_function, vals)))
